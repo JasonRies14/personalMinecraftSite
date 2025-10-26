@@ -14,25 +14,38 @@
 }
 
 .divForHeader {
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
 }
 
 .header1 {
-        color: rgba(255, 255, 255, 0.75);
-        justify-content: center;
-        font-size: 2.5rem;
-        padding: 0.5rem;
-        border: 1px solid black;
-        border-radius: 0.5rem;
-        background-color: rgba(255, 255, 255, 1);
-        background: rgba(255, 255, 255, 0);
-        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(4.3px);
-        -webkit-backdrop-filter: blur(4.3px);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
+    color: rgba(255, 255, 255, 0.75);
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.pForImageCreds {
+    display: flex;
+    justify-content: right;
+    align-self: center;
+}
+
+.aLinkForImageCreds {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
 
 
 /* ----------------------------- Mobile Friendly ----------------------------- */
