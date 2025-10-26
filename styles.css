@@ -47,6 +47,7 @@ audio {
 
 .header1 {
     color: rgba(255, 255, 255, 0.75);
+    align-content: center;
     justify-content: center;
     font-size: 2.5rem;
     padding: 0.5rem;
@@ -58,6 +59,10 @@ audio {
     backdrop-filter: blur(4.3px);
     -webkit-backdrop-filter: blur(4.3px);
     border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.pForHeader1 {
+    align-content: center;
 }
 
 .pForImageCreds {
@@ -118,6 +123,11 @@ audio {
     font-size: 1.5rem;
     border: 1px solid white;
 }
+
+/* ----------------------------- Animate attempt ----------------------------- */
+
+
+
 
 
 /* ----------------------------- Mobile Friendly ----------------------------- */
