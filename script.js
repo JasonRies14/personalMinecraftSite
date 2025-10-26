@@ -3,6 +3,7 @@ const playBtn = document.getElementById("playBtn");
 const playIcon = document.getElementById("playIcon");
 const pauseIcon = document.getElementById("pauseIcon");
 const seekBar = document.getElementById("SEEKBAR");
+const header1 = document.getElementById("HEADER1");
 
 // Hide default controls
 audio.controls = false;
@@ -16,25 +17,15 @@ playBtn.addEventListener("click", () => {
   }
 });
 
-// Swap icons on play/pause
+// Swap icons on play/pause + toggle animation
 audio.addEventListener("play", () => {
   playIcon.style.display = "none";
   pauseIcon.style.display = "block";
+  header1.classList.add("animate-border"); // Start animation
 });
 
 audio.addEventListener("pause", () => {
   pauseIcon.style.display = "none";
   playIcon.style.display = "block";
-});
-
-// Update progress bar
-audio.addEventListener("timeupdate", () => {
-  if (!isNaN(audio.duration)) {
-    seekBar.value = (audio.currentTime / audio.duration) * 100;
-  }
-});
-
-// Allow scrubbing
-seekBar.addEventListener("input", () => {
-  audio.currentTime = (seekBar.value / 100) * audio.duration;
+  header1.classList.remove("animate-border"); // Stop animation
 });
